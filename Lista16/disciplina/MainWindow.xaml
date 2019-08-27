@@ -6,9 +6,42 @@
         xmlns:local="clr-namespace:disciplina"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <ListBox Name="list" Height="100" Width="100"/>
-        <Button Content="button" Height="50" Width="100" Margin="346,285,346,84" Click="Button_Click"/>
+    <Grid Margin="0,-10,0,10">
+        <GroupBox Header="Aluno" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="752" Margin="20,23,0,0">
+            <Grid Margin="0,-10,0,10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0*"/>
+                    <ColumnDefinition Width="9*"/>
+                    <ColumnDefinition Width="361*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Margin="22,13,0,0" Width="120" Grid.Column="2"/>
+                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="22,40,0,0" Grid.Column="2"/>
+
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Disciplina" HorizontalAlignment="Left" Height="131" VerticalAlignment="Top" Width="752" Margin="20,130,0,0">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Margin="40,0,0,0" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="40,30,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Semestre" VerticalAlignment="Top" Margin="200,0,0,0" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="200,30,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Média" VerticalAlignment="Top" Margin="360,0,0,0" Width="120"/>
+                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="360,30,0,0"/>
+                <CheckBox Content="Aprovado" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="560,32,0,0"/>
+            </Grid>
+        </GroupBox>
+
+        <Button Content="Aluno" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="40,278,0,0"/>
+        <Button Content="Inserir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="140,278,0,0"/>
+        <Button Content="Excluir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="240,278,0,0"/>
+        <Button Content="IRA" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="340,278,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="96" Stroke="Black" VerticalAlignment="Top" Width="752" Margin="20,315,0,0" />
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="31,325,0,0" Height="75" Width="729"/>
+
+
+
+
 
     </Grid>
 </Window>

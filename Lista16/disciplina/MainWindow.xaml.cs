@@ -27,59 +27,58 @@ namespace disciplina
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            historico h = new historico("Thiago");
-            disciplina[] x = new disciplina[10];
-            h.Inserir( new disciplina("PEOO") );
-            h.Inserir( new disciplina("Design") );
-            h.Inserir( new disciplina("Física") ); 
-
-            list.ItemsSource = h.Listar();
+            Historico h = new Historico("Thiago");
+            h.Inserir(new Disciplina("POO", 80));
+            h.Inserir(new Disciplina("Design", 70));
+            h.Inserir(new Disciplina("Física", 95));
+            list.ItemsSource = h.Listar(); // h.discs;
+            txt.Text = h.IRA().ToString();
         }
-        class disciplina
+
+        class Disciplina
         {
             private string nome;
-            public disciplina(string nome)
+            private int media;
+            public Disciplina(string nome, int media)
             {
                 this.nome = nome;
+                this.media = media;
             }
             public override string ToString()
             {
                 return nome;
             }
+            public int GetMedia()
+            {
+                return media;
+            }
         }
 
-        class historico
+        class Historico
         {
             private string aluno;
-            private disciplina[] discs = new disciplina[10];
+            private Disciplina[] discs = new Disciplina[10];
             private int k;
-
-            public historico(string aluno)
+            public Historico(string aluno)
             {
                 this.aluno = aluno;
             }
-
-            public void Inserir(disciplina d)
+            public void Inserir(Disciplina d)
             {
-                if (k < 10) discs[k++] = d; 
+                if (k < 10) discs[k++] = d;
             }
-
-            public disciplina[] Listar()
+            public Disciplina[] Listar()
             {
-                disciplina[] novo = new disciplina[k];
+                Disciplina[] novo = new Disciplina[k];
                 Array.Copy(discs, novo, k);
                 return novo;
             }
-
             public double IRA()
             {
                 if (k == 0) return 0;
                 double x = 0;
-                foreach (disciplina x in discs)
-                {   
-                    if (dx != )
-                    x = x + SByte.GetMedia();
-                }
+                foreach (Disciplina d in discs)
+                    if (d != null) x = x + d.GetMedia();
                 return x / k;
             }
         }
