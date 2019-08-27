@@ -1,0 +1,14 @@
+﻿<Window x:Class="disciplina.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:disciplina"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListBox Name="list" Height="100" Width="100"/>
+        <Button Content="button" Height="50" Width="100" Margin="346,285,346,84" Click="Button_Click"/>
+
+    </Grid>
+</Window>
