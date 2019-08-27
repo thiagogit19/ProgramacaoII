@@ -27,10 +27,10 @@ namespace disciplina
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Historico h = new Historico("Thiago");
-            h.Inserir(new Disciplina("POO", 80));
-            h.Inserir(new Disciplina("Design", 70));
-            h.Inserir(new Disciplina("Física", 95));
+            Historico h = new Historico(aluno.Text);
+            h.Inserir(new Disciplina());
+            // h.Inserir(new Disciplina("Design", 70));
+            // h.Inserir(new Disciplina("Física", 95));
             list.ItemsSource = h.Listar(); // h.discs;
             txt.Text = h.IRA().ToString();
         }
