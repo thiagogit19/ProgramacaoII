@@ -88,7 +88,7 @@ namespace eq2
             {
                 x = 0;
                 if (RaizesReais() == false || a == 0) return false;
-                x = (-b + Math.Sqrt(CalcDelta())) / (2 * a);
+                x = (-b - Math.Sqrt(CalcDelta())) / (2 * a);
                 return true;
             }
         }

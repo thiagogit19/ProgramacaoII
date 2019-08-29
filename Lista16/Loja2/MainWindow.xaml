@@ -32,10 +32,10 @@
             </Grid>
         </GroupBox>
         <ListBox x:Name="lista" HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="475" Margin="21,315,0,0"/>
-        <Button Content="Loja" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="534,60,0,0" Click="Button_Click" Height="35"/>
-        <Button Content="Inserir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="661,60,0,0" Click="Button_Click_1" Height="35"/>
-        <Button Content="Vender" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="534,114,0,0" Height="30" Click="Button_Click_2"/>
-        <Button Content="Total" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="661,114,0,0" Height="30" Click="Button_Click_4"/>
+        <Button Content="Loja" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="534,35,0,0" Click="Button_Click" Height="35"/>
+        <Button Content="Inserir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="661,35,0,0" Click="Button_Click_1" Height="35"/>
+        <Button Content="Vender" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="534,89,0,0" Height="30" Click="Button_Click_2"/>
+        <Button Content="Total" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="661,89,0,0" Height="30" Click="Button_Click_4"/>
 
         <GroupBox Header="Preço Máximo" HorizontalAlignment="Left" Height="215" VerticalAlignment="Top" Width="225" Margin="534,194,0,0">
             <Grid>
