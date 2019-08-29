@@ -32,11 +32,10 @@
             </Grid>
         </GroupBox>
         <ListBox x:Name="lista" HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="475" Margin="21,315,0,0"/>
-        <Button Content="Loja" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="558,36,0,0" Click="Button_Click"/>
-        <Button Content="Inserir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="684,36,0,0" Click="Button_Click_1"/>
-        <Button Content="Listar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="558,90,0,0"/>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="685,90,0,0"/>
-        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="621,144,0,0"/>
+        <Button Content="Loja" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="534,60,0,0" Click="Button_Click" Height="35"/>
+        <Button Content="Inserir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="661,60,0,0" Click="Button_Click_1" Height="35"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="98" Margin="534,114,0,0" Height="30"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="684,113,0,0"/>
 
     </Grid>
 </Window>

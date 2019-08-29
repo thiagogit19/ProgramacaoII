@@ -33,7 +33,10 @@ namespace loja
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            j.Inserir(new veiculo(placa.Text, fab.Text, mod1.Text, ano.Text, decimal.Parse(preco.Text), check.IsChecked.Value));
+            bool ver = (check.IsChecked == true ? true : false);
+            /*if (check.IsChecked == true) ver = true;
+            else ver = false;*/
+            j.Inserir(new veiculo(placa.Text, fab.Text, mod1.Text, ano.Text, decimal.Parse(preco.Text), ver));
             lista.ItemsSource = j.Listar();
         }
     }
@@ -44,6 +47,7 @@ namespace loja
         private string ano;
         private decimal preco;
         private bool vendido;
+        private string situacao;
 
         public veiculo(string placa, string fabri, string mod, string ano, decimal preco, bool a)
         {
@@ -52,13 +56,6 @@ namespace loja
             modelo = mod;
             this.ano = ano;
             this.preco = preco;
-
-            vendido = a;
-        }
-
-        public override string ToString()
-        {
-            return $"{modelo} - {fabricante} - {ano}";
         }
 
         public decimal GetPreco()
@@ -73,7 +70,13 @@ namespace loja
 
         public void Vender()
         {
-            vendido = true;
+            if (vendido == true) situacao = "vendido";
+            else situacao = "A venda";
+        }
+
+        public override string ToString()
+        {
+            return $"{modelo} - {fabricante} - {ano} - {situacao}";
         }
     }
 
