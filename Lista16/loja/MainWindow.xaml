@@ -1,0 +1,42 @@
+﻿<Window x:Class="loja.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:loja"
+        mc:Ignorable="d"
+        Title="Loja" Height="450" Width="800">
+    <Grid>
+        <GroupBox Header="Loja" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="475" Margin="21,19,0,0">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top" Margin="18,9,0,0" Width="120"/>
+                <TextBox x:Name="nome" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="360" Margin="18,34,0,0"/>
+
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Veículo" HorizontalAlignment="Left" Height="173" VerticalAlignment="Top" Width="475" Margin="21,134,0,0">
+            <Grid x:Name="mod">
+                <TextBlock Text="Placa" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,10,0,0"/>
+                <TextBlock Text="Fabricante" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,10,0,0"/>
+                <TextBlock Text="Modelo" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="240,10,0,0"/>
+                <TextBlock Text="Ano" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,80,0,0"/>
+                <TextBlock Text="Preço" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,80,0,0"/>
+                <TextBox x:Name="placa" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,30,0,0"/>
+                <TextBox x:Name="fab" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,30,0,0"/>
+                <TextBox x:Name="mod1" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="240,30,0,0"/>
+                <TextBox x:Name="ano" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,100,0,0"/>
+                <TextBox x:Name="preco" Width="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="130,100,0,0"/>
+                <CheckBox x:Name="check" Content="Vendido" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="243,99,0,0"/>
+
+            </Grid>
+        </GroupBox>
+        <ListBox x:Name="lista" HorizontalAlignment="Left" Height="94" VerticalAlignment="Top" Width="475" Margin="21,315,0,0"/>
+        <Button Content="Loja" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="558,36,0,0" Click="Button_Click"/>
+        <Button Content="Inserir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="684,36,0,0" Click="Button_Click_1"/>
+        <Button Content="Listar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="558,90,0,0"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="685,90,0,0"/>
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="621,144,0,0"/>
+
+    </Grid>
+</Window>
