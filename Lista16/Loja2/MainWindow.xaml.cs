@@ -29,15 +29,33 @@ namespace loja
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             j = new loja(nome.Text);
+            // this.Title = nome.Text;
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             bool ver = (check.IsChecked == true ? true : false);
-            /*if (check.IsChecked == true) ver = true;
-            else ver = false;*/
             j.Inserir(new veiculo(placa.Text, fab.Text, mod1.Text, ano.Text, decimal.Parse(preco.Text), ver));
             lista.ItemsSource = j.Listar();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            if(lista.SelectedIndex != -1) { 
+            j.VenderCar(lista.SelectedIndex);
+            lista.ItemsSource = null;
+            lista.ItemsSource = j.Listar();
+            }
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            lista.ItemsSource = j.ListarValor(decimal.Parse(precomax.Text));
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(j.total().ToString());
         }
     }
 
@@ -56,6 +74,7 @@ namespace loja
             modelo = mod;
             this.ano = ano;
             this.preco = preco;
+            vendido = a;
         }
 
         public decimal GetPreco()
@@ -70,13 +89,20 @@ namespace loja
 
         public void Vender()
         {
-            if (vendido == true) situacao = "vendido";
-            else situacao = "A venda";
+            if (vendido == false)
+            {
+                situacao = "vendido";
+                vendido = true;
+            }
+
         }
 
         public override string ToString()
         {
-            return $"{modelo} - {fabricante} - {ano} - {situacao}";
+            if (vendido == true) situacao = "vendido";
+            else situacao = "A venda";
+
+            return $"{modelo} - {fabricante} - {ano} - {GetPreco()} - {situacao}";
         }
     }
 
@@ -119,14 +145,19 @@ namespace loja
             return vetor2;
         }
 
+        public void VenderCar(int i)
+        {
+            veiculos[i].Vender();
+        }
+
         public decimal total()
         {
             if (k == 0) return 0;
             decimal z = 0;
 
             foreach (veiculo d in veiculos)
-                if (d != null) z = z + d.GetPreco();
-            return z / k;
+                if ((d != null) && (d.GetVendido() == false)) z = z + d.GetPreco();
+            return z;
         }
     }
 }
