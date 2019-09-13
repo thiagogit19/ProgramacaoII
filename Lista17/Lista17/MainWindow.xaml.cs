@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace Ex01
+namespace Lista17
 {
     /// <summary>
     /// Interação lógica para MainWindow.xam

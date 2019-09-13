@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{1F1CCE8B-4741-4811-9BE5-3DC4FF6EBC14}</ProjectGuid>
+    <ProjectGuid>{409466A1-504B-4705-BFD5-8B8F6CA1AE1A}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Ex01</RootNamespace>
-    <AssemblyName>Ex01</AssemblyName>
+    <RootNamespace>sequencia</RootNamespace>
+    <AssemblyName>sequencia</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -63,12 +63,15 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Fibonacci.cs" />
+    <Compile Include="ISequencia.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PA.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
