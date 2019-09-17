@@ -8,29 +8,15 @@ namespace ex_02___agenda_de_compromisso
 {
     class compromisso
     {
-        private string assunto;
-        private string local;
-        private DateTime data;
+        public string Assunto { get; set; }
 
-        public string Assunto {
-            get { return assunto;  }
-            set { assunto = value;  }
-        }
+        public string Local { get; set; }
 
-        public string Local
-        {
-            get { return local; }
-            set { local = value; }
-        }
-
-        public DateTime Data {
-            get { return data;  }
-            set { data = value;  }
-        }
+        public DateTime Data { get; set; }
 
         public override string ToString()
         {
-            return $"{assunto} - {local} - {data}";
+            return $"{Assunto} - {Local} - {Data}";
         }
     }
 }

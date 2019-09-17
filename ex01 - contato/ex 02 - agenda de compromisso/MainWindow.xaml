@@ -10,27 +10,27 @@
         <GroupBox Header="Compromissos" HorizontalAlignment="Left" Height="144" VerticalAlignment="Top" Width="450" Margin="10,10,0,0">
             <Grid>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Assunto" VerticalAlignment="Top" Margin="23,10,0,0" Width="120"/>
-                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="23,45,0,0"/>
+                <TextBox x:Name="assunto" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="23,45,0,0"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Local" VerticalAlignment="Top" Margin="163,10,0,0" Width="120"/>
-                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="163,45,0,0"/>
+                <TextBox x:Name="local" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="163,45,0,0"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Data" VerticalAlignment="Top" Margin="303,10,0,0" Width="120"/>
-                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="303,45,0,0"/>
-                <Button Content="Inserir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="23,92,0,0" Click="Button_Click"/>
-                <Button Content="Listar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="163,92,0,0"/>
-                <Button Content="Excluir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="303,92,0,0"/>
+                <TextBox x:Name="data" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="303,45,0,0"/>
+                <Button Content="Inserir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="163,92,0,0" Click="Button_Click"/>
+                <Button Content="Excluir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="303,92,0,0" Click="Button_Click_1"/>
             </Grid>
         </GroupBox>
 
         <GroupBox Header="Buscar" HorizontalAlignment="Left" Height="99" VerticalAlignment="Top" Width="450" Margin="10,160,0,0">
             <Grid>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Mês" VerticalAlignment="Top" Margin="23,19,0,0" Width="120"/>
-                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="23,44,0,0"/>
+                <TextBox x:Name="mes" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="23,44,0,0"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ano" VerticalAlignment="Top" Margin="163,19,0,0" Width="120"/>
-                <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="163,44,0,0"/>
-                <Button Content="Pesquisar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="114" Margin="303,29,0,0"/>
+                <TextBox x:Name="ano" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="163,44,0,0"/>
+                <Button Content="Pesquisar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="303,20,0,0"/>
+                <Button Content="Quant.compromissos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="303,47,0,0"/>
             </Grid>
         </GroupBox>
-        <ListBox HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="450" Margin="10,277,0,0"/>
+        <ListBox x:Name="lista" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="450" Margin="10,277,0,0"/>
 
 
 

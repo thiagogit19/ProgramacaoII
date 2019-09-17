@@ -25,11 +25,26 @@ namespace ex_02___agenda_de_compromisso
             InitializeComponent();
         }
 
+        agenda t = new agenda();
         compromisso x;
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            x = new compromisso();
+            x.Assunto = assunto.Text;
+            x.Local = local.Text;
+            x.Data = DateTime.Parse(data.Text);
+            lista.Items.Add(x.ToString());
 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            if(lista.SelectedIndex != -1)
+            {
+                t.Excluir(lista.SelectedIndex);
+                lista.ItemsSource = null;
+                lista.Items.Add(t.Excluir());
+            }
         }
     }
 }
