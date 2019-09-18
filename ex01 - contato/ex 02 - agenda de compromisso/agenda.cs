@@ -10,11 +10,12 @@ namespace ex_02___agenda_de_compromisso
     {
         private compromisso[] comp = new compromisso[100];
         private int k;
-        private int j; // quantidade de eventos
+
+        public int Qtd { get; set; }
 
         public void Inserir(compromisso x){
-            if (k < 10) comp[k++] = x;
-            j += 1;
+            if (k < 100) comp[k++] = x;
+            Qtd += 1;
         }
 
         public compromisso[] Listar()
@@ -24,13 +25,14 @@ namespace ex_02___agenda_de_compromisso
             return novo;
         }
 
-        public void Excluir (int w){
-            for (int i = w; i < k; i++) // (w) É O ÍNDICE
+        public void Excluir (compromisso c){
+            int w = Array.IndexOf(comp, c);
+            for (int i = w; i < k; i++)
             {
                 comp[i] = comp[i + 1];
             }
             k--;
-            j -= 1;
+            Qtd -= 1;
         }
 
         public compromisso[] Pesquisar(int m, int a)
@@ -45,7 +47,6 @@ namespace ex_02___agenda_de_compromisso
                     vetor[y++] = comp[i];
                 }
             }
-
             compromisso[] vetor2 = new compromisso[y];
             Array.Copy(vetor, vetor2, y);
             return vetor2;

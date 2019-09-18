@@ -26,8 +26,8 @@
                 <TextBox x:Name="mes" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="23,44,0,0"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Ano" VerticalAlignment="Top" Margin="163,19,0,0" Width="120"/>
                 <TextBox x:Name="ano" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="163,44,0,0"/>
-                <Button Content="Pesquisar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="303,20,0,0"/>
-                <Button Content="Quant.compromissos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="303,47,0,0"/>
+                <Button Content="Pesquisar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="303,20,0,0" Click="Button_Click_2"/>
+                <Button Content="Quant.compromissos" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="303,47,0,0" Click="Button_Click_3"/>
             </Grid>
         </GroupBox>
         <ListBox x:Name="lista" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="450" Margin="10,277,0,0"/>

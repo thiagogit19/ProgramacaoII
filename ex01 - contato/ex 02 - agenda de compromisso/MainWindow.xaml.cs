@@ -25,26 +25,36 @@ namespace ex_02___agenda_de_compromisso
             InitializeComponent();
         }
 
-        agenda t = new agenda();
-        compromisso x;
+        agenda a = new agenda();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            x = new compromisso();
+
+            compromisso x = new compromisso();
             x.Assunto = assunto.Text;
             x.Local = local.Text;
             x.Data = DateTime.Parse(data.Text);
-            lista.Items.Add(x.ToString());
 
+            a.Inserir(x);
+            lista.ItemsSource = a.Listar();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            if(lista.SelectedIndex != -1)
-            {
-                t.Excluir(lista.SelectedIndex);
-                lista.ItemsSource = null;
-                lista.Items.Add(t.Excluir());
-            }
+            object u = lista.SelectedItem;
+            compromisso o = u as compromisso;
+            a.Excluir(o);
+            lista.ItemsSource = a.Listar();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+           lista.ItemsSource =  a.Pesquisar(int.Parse(mes.Text), int.Parse(ano.Text));
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+
+            MessageBox.Show($"{ a.Qtd}", "Quantidade de compromissos");
         }
     }
 }
