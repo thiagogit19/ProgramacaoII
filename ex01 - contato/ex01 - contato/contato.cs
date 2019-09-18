@@ -30,7 +30,17 @@ namespace ex01___contato
 
         public int Idade
         {
-            get { return DateTime.Now.Year - nascimento.Year;  }
+            get {
+                DateTime x = DateTime.Now;
+                if ((x.Month > nascimento.Month) || (x.Month == nascimento.Month && x.Day >= nascimento.Day)){
+                    return DateTime.Now.Year - nascimento.Year;
+                }
+
+                else
+                {
+                    return DateTime.Now.Year - nascimento.Year - 1;
+                }
+            }
         }
 
         public override string ToString()

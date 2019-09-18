@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ex01___contato"
         mc:Ignorable="d"
-        Title="Contato" Height="400" Width="600">
+        Title="Contato" Height="350" Width="550">
     <Grid>
-        <GroupBox Header="Lista de Contatos" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="547" Margin="10,10,0,0">
+        <GroupBox Header="Lista de Contatos" HorizontalAlignment="Left" Height="151" VerticalAlignment="Top" Width="480" Margin="10,10,0,0">
             <Grid>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nome" VerticalAlignment="Top" Margin="10,10,0,0" Width="120"/>
                 <TextBox x:Name="nome" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="10,44,0,0"/>
@@ -15,12 +15,12 @@
                 <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="175" Margin="140,44,0,0"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nascimento" VerticalAlignment="Top" Margin="328,10,0,0" Width="120"/>
                 <TextBox x:Name="nascimento" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="328,44,0,0"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Idade" VerticalAlignment="Top" Margin="460,10,0,0" Width="60"/>
-                <TextBox x:Name="idade" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="60" Margin="460,44,0,0"/>
-                <Button Content="Inserir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="400,88,0,0" Click="Button_Click"/>
-                <ListBox x:Name="lista" HorizontalAlignment="Left" Height="113" VerticalAlignment="Top" Width="510" Margin="10,154,0,-138"/>
+                <Button Content="Inserir" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="328,88,0,0" Click="Button_Click"/>
             </Grid>
         </GroupBox>
+        <ListBox x:Name="lista" HorizontalAlignment="Left" Height="100" Margin="10,177,0,0" VerticalAlignment="Top" Width="480"/>
+
+
 
     </Grid>
 </Window>

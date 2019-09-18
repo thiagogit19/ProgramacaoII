@@ -28,7 +28,6 @@ namespace ex_02___agenda_de_compromisso
         agenda a = new agenda();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             compromisso x = new compromisso();
             x.Assunto = assunto.Text;
             x.Local = local.Text;

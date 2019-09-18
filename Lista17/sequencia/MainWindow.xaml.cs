@@ -25,18 +25,20 @@ namespace sequencia
             InitializeComponent();
         }
 
+        Fibonacci x;
+        PA y;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            lista.ItemsSource = null;
-            Fibonacci x = new Fibonacci(int.Parse(quant.Text));
-            lista.Items.Add(x);
+            lista1.Items.Clear();
+            lista.Items.Clear();
+            x = new Fibonacci();
+            y = new PA(int.Parse(a1.Text), int.Parse(r.Text));
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            lista.ItemsSource = null;
-            PA y = new PA(int.Parse(a1.Text), int.Parse(r.Text));
-            lista.Items.Add(y);
+            lista1.Items.Add(x.Proximo());
+            lista.Items.Add(y.Proximo());
 
         }
     }

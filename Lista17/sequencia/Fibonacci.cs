@@ -9,28 +9,24 @@ namespace sequencia
     class Fibonacci : ISequencia
     {
         private int quant;
+        private int a = 0; 
+        private int b = 1;
 
         public void Iniciar()
         {
-            quant = q;
+            quant = 0;
         }
 
         public int Proximo()
         {
-            int num1 = 0;
-            int num2 = 1;
-            int aux;
-            for (int i = 0; i < quant; i++)
-            {
-                aux = num1;
-                num1 = num2;
-                num2 = num1 + aux;
-            }
+            if (quant == 1) return a;
 
-            return num2;
-
+            if (quant == 2) return b;
+ 
+            int c = a + b;
+            a = b;
+            b = c;
+            return c;
         }
-
-
     }
 }
