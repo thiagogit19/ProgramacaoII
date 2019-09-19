@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sequencia", "sequencia\sequ
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "media", "..\..\..\..\..\Downloads\PEOO_2019-master\PEOO_2019-master\Lista17\Ex01\media.csproj", "{AE122B20-D61C-469C-9B73-4AF74AECE7CA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex01", "Ex01\Ex01.csproj", "{D9E7580A-0ACB-455B-AE8E-A255954D9337}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sorteios", "sorteios\sorteios.csproj", "{8E2E5B0C-0FEF-4CC6-96B9-5A8DD0500E67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{AE122B20-D61C-469C-9B73-4AF74AECE7CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AE122B20-D61C-469C-9B73-4AF74AECE7CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AE122B20-D61C-469C-9B73-4AF74AECE7CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D9E7580A-0ACB-455B-AE8E-A255954D9337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D9E7580A-0ACB-455B-AE8E-A255954D9337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D9E7580A-0ACB-455B-AE8E-A255954D9337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D9E7580A-0ACB-455B-AE8E-A255954D9337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E2E5B0C-0FEF-4CC6-96B9-5A8DD0500E67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E2E5B0C-0FEF-4CC6-96B9-5A8DD0500E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E2E5B0C-0FEF-4CC6-96B9-5A8DD0500E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E2E5B0C-0FEF-4CC6-96B9-5A8DD0500E67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
