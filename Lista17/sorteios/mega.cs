@@ -11,8 +11,12 @@ namespace sorteios
         int n;
         public int Sortear()
         {
+            int j = 0;
             Random r = new Random();
-            n = r.Next(1, 60);
+            while (j < 6) {
+               n = r.Next(1, 60);
+               j++;
+            }
             return n;
         }
 
