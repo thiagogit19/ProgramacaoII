@@ -1,0 +1,45 @@
+﻿<Window x:Class="Lista17.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lista17"
+        mc:Ignorable="d"
+        Title="Média" Height="560" Width="800">
+    <Grid>
+        <GroupBox Header="Semestral" HorizontalAlignment="Left" Height="134" VerticalAlignment="Top" Width="599" Margin="22,20,0,0">
+            <Grid>
+                <TextBox x:Name="nomes" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="25,38,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top" Margin="25,10,0,0" Width="120"/>
+                <TextBox x:Name="n1s" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="165,38,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nota 1:" VerticalAlignment="Top" Margin="165,10,0,0" Width="120"/>
+                <TextBox x:Name="n2s" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="305,38,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nota 2:" VerticalAlignment="Top" Margin="305,10,0,0" Width="120"/>
+                <TextBox x:Name="nfs" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="445,38,-1,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nota final:" VerticalAlignment="Top" Margin="445,10,-1,0" Width="120"/>
+                <Button Content="Calcular" HorizontalAlignment="Left" VerticalAlignment="Top" Width="141" Margin="424,82,0,0" Click="Button_Click"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Anual" HorizontalAlignment="Left" Height="177" VerticalAlignment="Top" Width="703" Margin="22,176,0,0">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top" Margin="31,14,0,0" Width="120"/>
+                <TextBox x:Name="nomea" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="171,10,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nota 1:" VerticalAlignment="Top" Margin="31,53,0,0" Width="120"/>
+                <TextBox x:Name="n1a" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="31,79,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nota 2:" VerticalAlignment="Top" Margin="161,53,0,0" Width="120"/>
+                <TextBox x:Name="n2a" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="161,79,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nota 3:" VerticalAlignment="Top" Margin="291,53,0,0" Width="120"/>
+                <TextBox x:Name="n3a" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="291,79,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nota 4:" VerticalAlignment="Top" Margin="421,53,0,0" Width="120"/>
+                <TextBox x:Name="n4a" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="421,79,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nota final:" VerticalAlignment="Top" Margin="551,53,-84,0" Width="120"/>
+                <TextBox x:Name="nfa" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="551,79,-84,0"/>
+                <Button Content="Calcular" HorizontalAlignment="Left" VerticalAlignment="Top" Width="132" Margin="539,125,0,0" Click="Button_Click_1"/>
+            </Grid>
+        </GroupBox>
+        <ListBox x:Name="list" HorizontalAlignment="Left" Height="130" VerticalAlignment="Top" Width="703" Margin="22,374,0,0"/>
+
+
+    </Grid>
+</Window>

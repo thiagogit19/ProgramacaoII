@@ -13,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace sequencia
+namespace Lista17
 {
     /// <summary>
     /// Interação lógica para MainWindow.xam
@@ -25,23 +25,15 @@ namespace sequencia
             InitializeComponent();
         }
 
-        ISequencia y;
-        Fibonacci x;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            lista1.Items.Clear();
-            lista.Items.Clear();
-            x = new Fibonacci();
-            y = new PA(int.Parse(a1.Text), int.Parse(r.Text));
+            semestral x = new semestral(nomes.Text, int.Parse(n1s.Text), int.Parse(n2s.Text), int.Parse(nfs.Text));
+            list.Items.Add(x);
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            lista1.Items.Add(x.Proximo());
-            lista.Items.Add(y.Proximo());
 
         }
     }
-
-
 }
