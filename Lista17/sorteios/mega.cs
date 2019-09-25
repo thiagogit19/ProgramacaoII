@@ -8,25 +8,30 @@ namespace sorteios
 {
     class mega : ISorteio
     {
-        int n;
+        private int[] sorteados = new int[6];
+        private int k;
+        private int i;
+
         public int Sortear()
-        {
-            int j = 0;
+        { 
+            k = 0; i = 0;
             Random r = new Random();
-            while (j < 6) {
-               n = r.Next(1, 60);
-               j++;
+            while (k < 6) {
+               int i = r.Next(1, 61);
+
+                if (Array.IndexOf(sorteados, i) == -1)
+                {
+                    sorteados[k++] = i;
+                }
             }
-            return n;
+
+            return (i < 6 ? sorteados[i++] : 0);
         }
 
         public int[] Sorteados()
         {
-            int[] vetor = new int[5];
-            for (int i = 1; i <= 5; i++)
-            {
-                vetor[i] = n;
-            }
+            int[] vetor = new int[i];
+            Array.Copy(sorteados, vetor, i);
             return vetor;
         }
     }

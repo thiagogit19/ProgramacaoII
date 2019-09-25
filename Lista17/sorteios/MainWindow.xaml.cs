@@ -28,8 +28,6 @@ namespace sorteios
         ISorteio s;
         private void Button_Click(object sender, RoutedEventArgs e) // Sortear 1
         {
-            lista1.Items.Clear();
-
             bingo b = new bingo();
             b.SetNum(int.Parse(num.Text));
             s = b as ISorteio;
@@ -40,9 +38,10 @@ namespace sorteios
 
         private void Button_Click_1(object sender, RoutedEventArgs e) // Sortear 2
         {
-            m = new mega();
+            mega m = new mega();
+            s = m as ISorteio;
             numsorte2.Text = m.Sortear().ToString();
-            lista2.ItemsSource = b.Sorteados();
+            lista2.ItemsSource = m.Sorteados();
         }
     }
 }

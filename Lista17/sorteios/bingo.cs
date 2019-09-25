@@ -10,8 +10,9 @@ namespace sorteios
     {
         private int NumBolas;
         private int[] vetor;
-        // private int c;
+        private int c;
 
+        
         public void SetNum(int m)
         {
             NumBolas = m;
@@ -25,24 +26,32 @@ namespace sorteios
         public int Sortear()
         {
             int j = 0;
-            Random r = new Random();
+            vetor = new int[NumBolas];
+            Random r = new Random(); 
             while (j < NumBolas)
             {
-                int n = r.Next(1, 60);
-            }
+                int n = r.Next(1, NumBolas + 1);
 
-            return 0;
-            
+                if (Array.IndexOf(vetor, n) == -1)
+                {
+                    vetor[j] = n;
+                    j++;
+                }
+            }
+            c = 0;
+
+            if (c < NumBolas)
+            {
+                return vetor[c++];
+            }
+            else return 0;
         }
 
         public int[] Sorteados()
         {
-            vetor = new int[NumBolas];
-            for (int i = 1; i <= NumBolas; i++)
-            {
-                vetor[i] = n;
-            }
-            return vetor;
+            int[] vetor2 = new int[c];
+            Array.Copy(vetor, vetor2, c);
+            return vetor2; 
         }
     }
 }
