@@ -28,21 +28,40 @@ namespace sorteios
         ISorteio s;
         private void Button_Click(object sender, RoutedEventArgs e) // Sortear 1
         {
-            lista1.Items.Clear();
-
             bingo b = new bingo();
             b.SetNum(int.Parse(num.Text));
             s = b as ISorteio;
             numsorte.Text = b.Sortear().ToString();
-            lista1.ItemsSource = b.Sorteados();
         }
 
 
         private void Button_Click_1(object sender, RoutedEventArgs e) // Sortear 2
         {
-            m = new mega();
+            mega m = new mega();
+            s = m as ISorteio;
             numsorte2.Text = m.Sortear().ToString();
-            lista2.ItemsSource = b.Sorteados();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            sorteados1.Text = "";
+            int[] v = s.Sorteados();
+            foreach (int i in v)
+            {
+                sorteados1.Text += i.ToString();
+                sorteados1.Text += " ";
+            }
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            sorteados1.Text = "";
+            int[] v = s.Sorteados();
+            foreach(int i in v)
+            {
+                sorteados1.Text += i.ToString();
+                sorteados1.Text += " ";
+            }
         }
     }
 }

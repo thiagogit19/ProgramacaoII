@@ -12,8 +12,9 @@
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Número de bolas do jogo: " VerticalAlignment="Top" Margin="37,10,0,0" Width="149"/>
                 <TextBox x:Name="num" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149" Margin="37,43,0,0"/>
                 <Button Content="Sortear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="236,10,0,0" Height="23" Click="Button_Click"/>
-                <ListBox x:Name="lista1" HorizontalAlignment="Left" Height="90" Margin="37,76,0,0" VerticalAlignment="Top" Width="311"/>
                 <TextBox x:Name="numsorte" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="112" Margin="236,43,0,0"/>
+                <Button Content="Sorteados" HorizontalAlignment="Left" VerticalAlignment="Top" Width="112" Margin="236,75,0,0" Height="23" Click="Button_Click_2" />
+                <TextBox x:Name="sorteados" HorizontalAlignment="Left" Height="53" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="311" Margin="37,113,0,0"/>
 
             </Grid>
         </GroupBox>
@@ -21,8 +22,10 @@
         <GroupBox Header="Mega-Sena" HorizontalAlignment="Left" Height="160" VerticalAlignment="Top" Width="400" Margin="33,233,0,0">
             <Grid>
                 <Button Content="Sortear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="37,10,0,0" Click="Button_Click_1"/>
-                <ListBox x:Name="lista2" HorizontalAlignment="Left" Height="89" VerticalAlignment="Top" Width="308" Margin="37,39,0,0"/>
                 <TextBox x:Name="numsorte2" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="225,7,0,0"/>
+                <Button Content="Sorteados" HorizontalAlignment="Left" VerticalAlignment="Top" Width="111" Margin="37,40,0,0" Click="Button_Click_3" />
+                <TextBox x:Name="sorteados1" HorizontalAlignment="Left" Height="52" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="308" Margin="37,76,0,0"/>
+
             </Grid>
         </GroupBox>
     </Grid>
