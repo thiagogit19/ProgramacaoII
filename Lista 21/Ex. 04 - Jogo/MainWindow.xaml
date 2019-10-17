@@ -1,0 +1,42 @@
+﻿<Window x:Class="Ex._04___Jogo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ex._04___Jogo"
+        mc:Ignorable="d"
+        Title="Jogo" Height="450" Width="900">
+    <Grid>
+        <GroupBox Header="Jogo" HorizontalAlignment="Left" Height="100" Margin="10,10,0,0" VerticalAlignment="Top" Width="563">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="45,19,0,0" Height="23" Width="111" Text="Jogo:"/>
+                <TextBox x:Name="nomejogo" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="149" Margin="190,19,0,0"/>
+                <Button Content="Criar jogo" HorizontalAlignment="Left" Margin="399,19,0,0" VerticalAlignment="Top" Width="106" Height="23" Click="Button_Click"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Jogadores" HorizontalAlignment="Left" Height="144" Margin="10,128,0,0" VerticalAlignment="Top" Width="642">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nome:" VerticalAlignment="Top" Margin="25,20,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Email:" VerticalAlignment="Top" Margin="165,20,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Pontuação Máxima:" VerticalAlignment="Top" Margin="305,20,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Data:" VerticalAlignment="Top" Margin="445,20,0,0"/>
+                <TextBox x:Name="nome" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="25,52,0,0"/>
+                <TextBox x:Name="email" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="165,52,0,0"/>
+                <TextBox x:Name="pm" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="305,52,0,0"/>
+                <TextBox x:Name="data" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="445,52,0,0"/>
+                <Button Content="Inserir Jogador" HorizontalAlignment="Left" VerticalAlignment="Top" Width="630" Margin="0,94,0,0" Height="26" Click="Button_Click_1"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Operações" HorizontalAlignment="Left" Height="262" VerticalAlignment="Top" Width="194" Margin="675,10,0,0">
+            <Grid>
+                <Button Content="Listar" HorizontalAlignment="Left" Margin="45,44,0,0" VerticalAlignment="Top" Width="96" Height="27" Click="Button_Click_2"/>
+                <Button Content="Primeiro lugar" HorizontalAlignment="Left" Margin="45,104,0,0" VerticalAlignment="Top" Width="96" Height="27" Click="Button_Click_3"/>
+                <Button Content="Top 10" HorizontalAlignment="Left" Margin="45,164,0,0" VerticalAlignment="Top" Width="96" Height="27" Click="Button_Click_4"/>
+            </Grid>
+        </GroupBox>
+
+        <ListBox x:Name="lista" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="859" Margin="10,300,0,0"/>
+    </Grid>
+</Window>

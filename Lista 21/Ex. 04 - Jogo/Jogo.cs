@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Ex._04
+namespace Ex._04___Jogo
 {
     class Jogo
     {

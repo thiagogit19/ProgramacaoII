@@ -12,7 +12,7 @@ namespace Lista_21
 
         public void SetTeste(int valor)
         {
-            if (valor < 0) throw new Erro();
+            if (valor < 0) throw new Erro();  
             else value = valor;
         }
 
