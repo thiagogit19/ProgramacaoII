@@ -44,15 +44,13 @@ namespace Ex._04___Jogo
 
             catch (ArgumentOutOfRangeException a)
             {
-                MessageBox("erro.Message");
+                MessageBox.Show(erro.Message);
             }
 
             catch (EmailExistenteException b)
             {
-
+                MessageBox.Show(erro.Message);
             }
-
-            
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
