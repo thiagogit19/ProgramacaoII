@@ -33,7 +33,7 @@ namespace Ex._04___Jogo
         {
             if (p > 0) PontuacaoMaxima = p;
             else throw new ArgumentOutOfRangeException();
-            if (d >= DateTime.Now) data = d;
+            if (d <= DateTime.Now) data = d;
             else throw new ArgumentOutOfRangeException();
         }
 
@@ -45,8 +45,8 @@ namespace Ex._04___Jogo
         public int CompareTo(object obj)
         {
             Jogador outro = obj as Jogador;
-            if (Pontuacao.CompareTo(outro.Pontuacao) != 0)
-                return Pontuacao.CompareTo(outro.Pontuacao);
+            if (PontuacaoMaxima.CompareTo(outro.PontuacaoMaxima) != 0)
+                return - PontuacaoMaxima.CompareTo(outro.PontuacaoMaxima);
             else return Data.CompareTo(outro.Data);
         }
     }

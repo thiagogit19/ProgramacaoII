@@ -28,7 +28,7 @@ namespace Ex._04___Jogo
         Jogo x;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
+            lista.ItemsSource = null;
             x = new Jogo(nomejogo.Text);
         }
 
@@ -44,28 +44,30 @@ namespace Ex._04___Jogo
 
             catch (ArgumentOutOfRangeException a)
             {
-                MessageBox.Show(erro.Message);
+                MessageBox.Show("Pontuação negativa e/ou data inválida");
             }
 
             catch (EmailExistenteException b)
             {
-                MessageBox.Show(erro.Message);
+                MessageBox.Show("Este email cadastrado já existe");
             }
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            lista.ItemsSource = null;
             lista.ItemsSource = x.Listar();
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            lista.Items.Clear();
-            lista.Items.Add(x.Top1());
+            lista.ItemsSource = null;
+            lista.ItemsSource = new Jogador[]{ x.Top1() };
         }
 
         private void Button_Click_4(object sender, RoutedEventArgs e)
         {
+            lista.ItemsSource = null;
             lista.ItemsSource = x.Top10();
         }
     }

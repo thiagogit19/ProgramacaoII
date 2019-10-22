@@ -40,13 +40,13 @@ namespace Ex._04___Jogo
         {
             List<Jogador> novo = new List<Jogador>();
             jogs.Sort();
-            jogs.CopyTo(0, novo.ToArray(), 0, 10);
+
+            for (int i = 0; i < 10; i++)
+                if (i == jogs.Count) break;
+                else novo.Add(jogs[i]);
             return novo;
 
-            //for (int i = 0; i < 10; i++)
-            //{
-            //   novo.Add(jogs[i]);
-            //}
+            // return jogs.Take<Jogador>(10).ToList();
         }
     }
 }
