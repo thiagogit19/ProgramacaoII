@@ -16,6 +16,7 @@ namespace ex._01
             quadrado q = new quadrado(b);
             Console.WriteLine(r);
             Console.WriteLine(q);
+            Console.ReadKey();
         }
     }
 }

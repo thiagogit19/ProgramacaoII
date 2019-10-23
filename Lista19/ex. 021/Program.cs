@@ -17,6 +17,7 @@ namespace ex._021
             FreteExpresso fretex = new FreteExpresso(d, p, s);
             Console.WriteLine(f);
             Console.WriteLine(fretex);
+            Console.ReadKey();
         }
     }
 }

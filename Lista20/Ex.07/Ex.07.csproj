@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{3E6FC88B-FE9D-4922-8BCC-8ED95920B93A}</ProjectGuid>
+    <ProjectGuid>{1EBD7D93-CFA7-4C1A-9AF7-C1C57D9ACDA0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ex._07</RootNamespace>
-    <AssemblyName>ex. 07</AssemblyName>
+    <RootNamespace>Ex._07</RootNamespace>
+    <AssemblyName>Ex.07</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -55,13 +55,21 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="loja.cs" />
     <Compile Include="veiculo.cs" />
     <Compile Include="VeiculoWindow.xaml.cs">
       <DependentUpon>VeiculoWindow.xaml</DependentUpon>
     </Compile>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="loja.cs" />
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="VeiculoWindow.xaml">

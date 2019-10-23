@@ -11,6 +11,7 @@ namespace ex._04
     class agenda
     {
         private List<contato> cs = new List<contato>();
+        private string arquivo = "arquivo.xml";
 
         public void Inserir(contato c)
         {
@@ -36,16 +37,18 @@ namespace ex._04
 
         public void Abrir()
         {
-
+            XmlSerializer x = new XmlSerializer(typeof(List<contato>));
+            StreamReader f = new StreamReader(arquivo, Encoding.Default);
+            x.Deserialize(f);
+            f.Close();
         }
 
         public void Salvar()
         {
             XmlSerializer x = new XmlSerializer(typeof(List<contato>));
-            StreamWriter f = new StreamWriter(arquivo, false, Encoding.default);
-            StreamWriter f = new StreamWriter(arquivo, false, Encoding.default);
+            StreamWriter f = new StreamWriter(arquivo, false, Encoding.Default);
             x.Serialize(f, cs);
-            f.close();
+            f.Close();
         }
     }
 }

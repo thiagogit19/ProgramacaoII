@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ex._08
+namespace Ex._08___wpf
 {
     class produto
     {
@@ -18,6 +18,8 @@ namespace ex._08
         public decimal Preco { get => preco; }
 
         public DateTime Validade { get => validade; }
+
+        public int Qtd { get => qtd; }
 
         public produto(string d, decimal p, int q, DateTime v)
         {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ex._08
+namespace Ex._08___wpf
 {
     class estoque
     {
@@ -28,7 +28,7 @@ namespace ex._08
 
         public produto[] ListarPreco()
         {
-            produto[] lp = produtos.OrderBy(produto => produto.Preco).ToArray();
+            produto[] lp = produtos.OrderByDescending(produto => produto.Preco).ToArray();
             return lp;
         }
 
@@ -54,6 +54,18 @@ namespace ex._08
             }
             produto[] vet = novo.ToArray();
             return vet;
+        }
+
+        public produto[] EstoqueBaixo(int min)
+        {
+            List<produto> novo = new List<produto>();
+            foreach (produto p in produtos)
+            {
+                if (if p.Qtd <= min) novo.Add(p);
+            }
+
+            produto[] vetor = novo.ToArray();
+            return vetor;
         }
 
         public decimal Total()

@@ -19,6 +19,7 @@ namespace ex._03
             Console.WriteLine(cc);
             Console.WriteLine(ce);
             Console.WriteLine(p);
+            Console.ReadKey();
         }
     }
 }

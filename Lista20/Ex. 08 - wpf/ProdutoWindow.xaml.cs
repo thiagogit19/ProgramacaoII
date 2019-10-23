@@ -10,27 +10,33 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ex._07
+namespace Ex._08___wpf
 {
     /// <summary>
-    /// Interação lógica para MainWindow.xam
+    /// Lógica interna para ProdutoWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class ProdutoWindow : Window
     {
-        public MainWindow()
+        public ProdutoWindow()
         {
             InitializeComponent();
         }
 
-        loja j;
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            j = new loja(nome.Text);
+            DialogResult = true;
         }
 
-
+        private void Cancel_Click(object sender, RoutedEventArgs e)
+        {
+            DialogResult = false;
+        }
+        internal produto GetProduto()
+        {
+            produto p = new produto(txtDesc.Text, decimal.Parse(txtPreco.Text), int.Parse(txtQtd.Text), DateTime.Parse(txtValidade.Text));
+            return p;
+        }
     }
 }
