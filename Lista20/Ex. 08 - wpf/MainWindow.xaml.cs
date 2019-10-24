@@ -25,41 +25,41 @@ namespace Ex._08___wpf
             InitializeComponent();
         }
 
-        estoque e = new estoque();
+        estoque es = new estoque();
 
         private void ListarDescricaoClick(object sender, RoutedEventArgs e)
         {
-            lista.ItemsSource = e.ListarDescricao();
+            lista.ItemsSource = es.ListarDescricao();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            lista.ItemsSource = e.ListarPreco();
+            lista.ItemsSource = es.ListarPreco();
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            lista.ItemsSource = e.Vencidos();
-        }
-
-        private void Button_Click_4(object sender, RoutedEventArgs e)
-        {
-            lista.ItemsSource = e.AVencer(int.Parse(dias.Text));
-        }
-
-        private void Button_Click_5(object sender, RoutedEventArgs e)
-        {
-            lista.ItemsSource = e.EstoqueBaixo(int.Parse(qtd.Text));
+            lista.ItemsSource = es.Vencidos();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show(e.total().ToString(), "Total em R$");
+            lista.ItemsSource = es.AVencer(int.Parse(dias.Text));
         }
 
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {
-            e.excluir(lista.SelectedItem as produto);
+            lista.ItemsSource = es.EstoqueBaixo(int.Parse(qtd.Text));
+        }
+
+        private void Button_Click_4(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show(es.Total().ToString(), "Total em R$");
+        }
+
+        private void Button_Click_5(object sender, RoutedEventArgs e)
+        {
+            es.Excluir(lista.SelectedItem as produto);
         }
 
         private void Button_Click_6(object sender, RoutedEventArgs e)

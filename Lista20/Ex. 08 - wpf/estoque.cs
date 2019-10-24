@@ -59,9 +59,10 @@ namespace Ex._08___wpf
         public produto[] EstoqueBaixo(int min)
         {
             List<produto> novo = new List<produto>();
+
             foreach (produto p in produtos)
             {
-                if (if p.Qtd <= min) novo.Add(p);
+                if (p.Qtd <= min) novo.Add(p);
             }
 
             produto[] vetor = novo.ToArray();

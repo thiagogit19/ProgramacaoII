@@ -39,5 +39,10 @@ namespace Ex._08___wpf
             if (DateTime.Now > validade) return true;
             return false;
         }
+
+        public override string ToString()
+        {
+            return $"{descricao} - {preco} - {qtd} - {validade}";
+        }
     }
 }

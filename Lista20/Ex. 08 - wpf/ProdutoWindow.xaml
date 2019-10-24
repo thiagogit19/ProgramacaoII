@@ -8,12 +8,12 @@
         Title="ProdutoWindow" Height="300" Width="450">
     <Grid>
         <TextBlock Text="Descrição" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="235,89,0,0"/>
-        <TextBlock Text="Preço" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="235,46,0,0"/>
-        <TextBlock Text="Validade" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="235,136,0,0"/>
-        <TextBlock Text="Quantidade" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="235,188,0,0"/>
         <TextBox x:Name="txtDesc" Width="200" Padding="5" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,31,0,0"/>
+        <TextBlock Text="Preço" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="235,46,0,0"/>
         <TextBox x:Name="txtPreco" Width="200" Padding="5" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,176,0,0"/>
+        <TextBlock Text="Validade" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="235,136,0,0"/>
         <TextBox x:Name="txtValidade" Width="200" Padding="5" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,124,0,0"/>
+        <TextBlock Text="Quantidade" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="235,188,0,0"/>
         <TextBox x:Name="txtQtd" Width="200" Padding="5" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,77,0,0"/>
 
         <Button Content="Confirmar" Width="100" Height="28" Click="Button_Click" Margin="320,83,22,158"/>

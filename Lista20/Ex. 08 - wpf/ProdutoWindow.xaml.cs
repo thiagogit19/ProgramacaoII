@@ -33,6 +33,7 @@ namespace Ex._08___wpf
         {
             DialogResult = false;
         }
+
         internal produto GetProduto()
         {
             produto p = new produto(txtDesc.Text, decimal.Parse(txtPreco.Text), int.Parse(txtQtd.Text), DateTime.Parse(txtValidade.Text));

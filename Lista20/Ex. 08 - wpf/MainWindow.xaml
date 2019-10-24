@@ -11,15 +11,15 @@
             <Grid>
                 <TextBlock Text="Dias" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="15" Margin="10,10,0,63"/>
                 <TextBox x:Name="dias" VerticalAlignment="Center" HorizontalAlignment="Left" Width="200" Padding="6" Margin="10,42,0,21"/>
-                <Button Content="Buscar" VerticalAlignment="Center" HorizontalAlignment="Left" Width="100" Padding="6" Margin="255,42,0,21" Click="Button_Click_4"/>
+                <Button Content="Buscar" VerticalAlignment="Center" HorizontalAlignment="Left" Width="100" Padding="6" Margin="255,42,0,21" Click="Button_Click_2"/>
             </Grid>
         </GroupBox>
 
         <GroupBox Header="Estoque" HorizontalAlignment="Left" Height="118" VerticalAlignment="Top" Width="389" Margin="26,145,0,0">
             <Grid>
                 <TextBlock Text="Quantidade de prudutos" VerticalAlignment="Center" HorizontalAlignment="Left" FontSize="15" Margin="17,11,0,65"/>
-                <TextBox x:Name="qtd" VerticalAlignment="Center" HorizontalAlignment="Left" Width="200" Padding="6" Margin="17,44,0,32"/>
-                <Button Content="Buscar" VerticalAlignment="Center" HorizontalAlignment="Left" Width="100" Padding="6" Margin="253,34,0,32" Click="Button_Click_5"/>
+                <TextBox x:Name="qtd" VerticalAlignment="Center" HorizontalAlignment="Left" Width="200" Padding="6" Margin="17,44,0,10" Height="42"/>
+                <Button Content="Buscar" VerticalAlignment="Center" HorizontalAlignment="Left" Width="100" Padding="6" Margin="253,34,0,32" Click="Button_Click_3" />
             </Grid>
         </GroupBox>
 
@@ -28,12 +28,19 @@
         <Button Content="Listar por Descrição" Width="150" Height="35" Click="ListarDescricaoClick" Margin="26,278,616,128"/>
         <Button Content="Listar por Preço" Width="150" Height="35" Click="Button_Click" RenderTransformOrigin="-0.074,1.198" Margin="222,278,420,128"/>
         <Button Content="Vencidos"  Width="150" Height="35" Click="Button_Click_1" Margin="419,278,223,128"/>
-        <Button Content="Total (R$)" Width="150" Height="35" Click="Button_Click_2" Margin="617,278,25,128"/>
+        <Button Content="Total (R$)" Width="150" Height="35" Click="Button_Click_4" Margin="617,278,25,128"/>
 
-        <GroupBox Header="Menu" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="347" Margin="222,333,0,0">
+        <GroupBox Header="Menu" HorizontalAlignment="Left" Height="80" VerticalAlignment="Top" Width="347" Margin="26,334,0,0">
             <Grid>
                 <Button Content="Inserir" HorizontalAlignment="Right" Margin="0,12,25,11" Width="120" Height="35" Click="Button_Click_6"/>
-                <Button Content="Excluir" Width="120" HorizontalAlignment="Right" Margin="0,12,190,11" Height="35" Click="Button_Click_3"/>
+                <Button Content="Excluir" Width="120" HorizontalAlignment="Right" Margin="0,12,190,11" Height="35" Click="Button_Click_5"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Estoque" HorizontalAlignment="Left" Width="394" Margin="373,334,0,33">
+            <Grid>
+                <TextBox x:Name="nome" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="122,15,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nome do estoque" VerticalAlignment="Top" Margin="10,17,0,0"/>
             </Grid>
         </GroupBox>
 
