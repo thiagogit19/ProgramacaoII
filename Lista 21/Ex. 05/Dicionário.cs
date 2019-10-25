@@ -10,13 +10,17 @@ namespace Ex._05
     {
         private List<K> chaves = new List<K>();
         private List<V> valores = new List<V>();
+
+
+        public List<K> Chaves { get { return chaves; } }
+        public List<V> Valores { get { return valores; } }
+
         public void Add(K chave, V valor)
         {
             chaves.Add(chave);
             valores.Add(valor);
         }
-        public List<K> Chaves { get { return chaves; } }
-        public List<V> Valores { get { return valores; } }
+        
         public V this[K chave]
         {
             get

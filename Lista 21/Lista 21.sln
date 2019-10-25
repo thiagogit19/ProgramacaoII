@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex. 04 - Jogo", "Ex. 04 - J
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex. 05", "Ex. 05\Ex. 05.csproj", "{C84FE3AC-4C91-4261-97AF-783C663442FB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ex. 05 - Dicionário", "Ex. 05 - Dicionário\Ex. 05 - Dicionário.csproj", "{BD2FF17C-8361-4C6D-B2FB-86311E6A49EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{C84FE3AC-4C91-4261-97AF-783C663442FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C84FE3AC-4C91-4261-97AF-783C663442FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C84FE3AC-4C91-4261-97AF-783C663442FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD2FF17C-8361-4C6D-B2FB-86311E6A49EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2FF17C-8361-4C6D-B2FB-86311E6A49EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2FF17C-8361-4C6D-B2FB-86311E6A49EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD2FF17C-8361-4C6D-B2FB-86311E6A49EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
