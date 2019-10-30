@@ -13,6 +13,8 @@ namespace Ex._05___Dicionário
 
         public List<K> Chaves { get => chaves; }
 
+        public List<V> Valores { get => valores; }
+
         public int Count { get => valores.Count; }
 
         public V this[K chave]
@@ -68,7 +70,6 @@ namespace Ex._05___Dicionário
         {
             if (chaves.Contains(chave)) return chaves.Remove(chave);
             else return false;
-
         }
     }
 }

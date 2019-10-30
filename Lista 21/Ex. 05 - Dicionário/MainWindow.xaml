@@ -5,8 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Ex._05___Dicionário"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Dicionário" Height="621.891" Width="609.966">
     <Grid>
-        
+        <GroupBox Header="Adicionar" HorizontalAlignment="Left" Height="173" Margin="10,10,0,0" VerticalAlignment="Top" Width="363">
+            <Grid>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Chave" VerticalAlignment="Top" Margin="26,22,0,0" Width="120" Height="23"/>
+                <TextBox x:Name="chaveAdd" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="182,21,0,0"/>
+                <Button Content="Inserir" HorizontalAlignment="Left" Margin="10,119,0,0" VerticalAlignment="Top" Width="331" Height="22" Click="Button_Click"/>
+                <TextBox x:Name="valorAdd" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="182,69,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Valor" VerticalAlignment="Top" Margin="26,69,0,0" Width="120" Height="23"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Pesquisar" HorizontalAlignment="Left" Height="173" VerticalAlignment="Top" Width="199" Margin="391,10,0,0">
+            <Grid>
+                <TextBox x:Name="buscar" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="30,66,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="  Pesquise uma chave" VerticalAlignment="Top" Margin="30,22,0,0" Width="120" Height="23"/>
+                <Button Content="Buscar" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="167" Height="21" Click="Button_Click_1"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Contém?" HorizontalAlignment="Left" Height="136" VerticalAlignment="Top" Width="166" Margin="10,200,0,0">
+            <Grid>
+                <TextBox x:Name="contem" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="16,37,0,0"/>
+                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="             Chave" VerticalAlignment="Top" Margin="16,10,0,0" Width="120" Height="23"/>
+                <Button Content="Verificar" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="134" Height="21"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Remove" HorizontalAlignment="Left" Height="136" VerticalAlignment="Top" Width="180" Margin="193,200,0,0">
+            <Grid>
+                <TextBox x:Name="remover" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="23,37,0,0"/>
+                <TextBlock HorizontalAlignment="Left" Text="             Chave" TextWrapping="Wrap" VerticalAlignment="Top" Margin="23,10,0,0" Width="120" Height="23"/>
+                <Button Content="Remover" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="148" Height="21"/>
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Limpeza" HorizontalAlignment="Left" Height="136" Margin="391,200,0,0" VerticalAlignment="Top" Width="199">
+            <Grid>
+                <Button Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Width="167" Margin="10,10,0,0" Height="94" Click="Button_Click_2"/>
+            </Grid>
+        </GroupBox>
+        <ListBox x:Name="ListC" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="580" Margin="10,351,0,0"/>
+        <ListBox x:Name="ListV" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="580" Margin="10,471,0,0"/>
+
+
+
+
+
     </Grid>
 </Window>
