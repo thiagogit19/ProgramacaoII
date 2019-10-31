@@ -25,11 +25,11 @@ namespace Ex._05___Dicionário
             InitializeComponent();
         }
 
+        Dicionário<int, string> x = new Dicionário<int, string>();
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             try
             {
-                Dicionário<int, string> x = new Dicionário<int, string>();
                 x.Add(int.Parse(chaveAdd.Text), valorAdd.Text);
                 ListC.ItemsSource = null;
                 ListV.ItemsSource = null;
@@ -37,26 +37,41 @@ namespace Ex._05___Dicionário
                 ListV.ItemsSource = x.Valores;
             }
 
-            catch (ArgumentNullException e)
+            catch (ArgumentNullException erro)
             {
                 Console.WriteLine("Chave e/ou valor inválido.");
             }
 
-            catch (InvalidOperationException e)
+            catch (InvalidOperationException erro)
             {
                 Console.WriteLine("A chave já existe");
             }  
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-
-        }
-
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
+            x.Clear();
             ListC.ItemsSource = null;
             ListV.ItemsSource = null;
+        }
+
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            if (x.Contains(int.Parse(contem.Text)) == true)
+            {
+                MessageBox.Show("Contém a chave");
+            }
+
+            else MessageBox.Show("Não contém");
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            x.Remove(int.Parse(remover.Text));
+            ListC.ItemsSource = null;
+            ListV.ItemsSource = null;
+            ListC.ItemsSource = x.Chaves;
+            ListV.ItemsSource = x.Valores;
         }
     }
 }

@@ -17,19 +17,11 @@
             </Grid>
         </GroupBox>
 
-        <GroupBox Header="Pesquisar" HorizontalAlignment="Left" Height="173" VerticalAlignment="Top" Width="199" Margin="391,10,0,0">
-            <Grid>
-                <TextBox x:Name="buscar" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="30,66,0,0"/>
-                <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="  Pesquise uma chave" VerticalAlignment="Top" Margin="30,22,0,0" Width="120" Height="23"/>
-                <Button Content="Buscar" HorizontalAlignment="Left" Margin="10,120,0,0" VerticalAlignment="Top" Width="167" Height="21" Click="Button_Click_1"/>
-            </Grid>
-        </GroupBox>
-
         <GroupBox Header="Contém?" HorizontalAlignment="Left" Height="136" VerticalAlignment="Top" Width="166" Margin="10,200,0,0">
             <Grid>
                 <TextBox x:Name="contem" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="16,37,0,0"/>
                 <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="             Chave" VerticalAlignment="Top" Margin="16,10,0,0" Width="120" Height="23"/>
-                <Button Content="Verificar" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="134" Height="21"/>
+                <Button Content="Verificar" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="134" Height="21" Click="Button_Click_3"/>
             </Grid>
         </GroupBox>
 
@@ -37,7 +29,7 @@
             <Grid>
                 <TextBox x:Name="remover" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Margin="23,37,0,0"/>
                 <TextBlock HorizontalAlignment="Left" Text="             Chave" TextWrapping="Wrap" VerticalAlignment="Top" Margin="23,10,0,0" Width="120" Height="23"/>
-                <Button Content="Remover" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="148" Height="21"/>
+                <Button Content="Remover" HorizontalAlignment="Left" Margin="10,83,0,0" VerticalAlignment="Top" Width="148" Height="21" Click="Button_Click_1"/>
             </Grid>
         </GroupBox>
 

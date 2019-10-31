@@ -68,7 +68,7 @@ namespace Ex._05___Dicionário
 
         public bool Remove(K chave)
         {
-            if (chaves.Contains(chave)) return chaves.Remove(chave);
+            if (chaves.Contains(chave)) { valores.RemoveAt(chaves.IndexOf(chave)); return chaves.Remove(chave); }
             else return false;
         }
     }
