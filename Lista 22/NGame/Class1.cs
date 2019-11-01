@@ -13,7 +13,7 @@ namespace NGame
 
         public List<Game> Select()
         {
-            return v.OrderBy()
+            return v.OrderBy(games => games.Nome);
         }
     }
 }
